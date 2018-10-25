@@ -1,7 +1,8 @@
 var recipes = {eggs: 3}
 
 function updateObjectWithKeyAndValue(object, key, value){
-  return Object.assign({}, object, {[key]:value})
+  var newObj = Object.assign(object, {[key]:value})
+  return newObj
   //returns original key value pairs and new key value pair
   //doesn't modify original "recipes" object, returns clone with new data
 }
